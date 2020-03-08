@@ -1,11 +1,11 @@
 <template>
     <div class="slider">
-      <h3>Ação</h3>
+      <h3> {{titulo}} </h3>
       <span @mouseover="scrollToLeft" @mouseout="clearScroll" class="handle handlePrev active">
         <i class="fa fa-caret-left" aria-hidden="true"></i>
       </span>
 
-      <div id="scroller" class="row">
+      <div ref="scroller" class="row">
         <div class="row__inner">
           <div class="gui-card">
             <div class="gui-card__media">
@@ -85,7 +85,22 @@
 
 <script>
 export default {
-    name: 'categoria'
+    props: ['titulo'],
+    methods:{
+    scrollToRight(){
+      this.intervalo = setInterval(() => {
+        this.$refs.scroller.scrollLeft += 1
+      }, 5);
+    },
+    scrollToLeft(){
+      this.intervalo = setInterval(() => {
+        this.$refs.scroller.scrollLeft -= 1
+      }, 5);
+    },
+    clearScroll(){
+      clearInterval(this.intervalo);
+    }
+  }
 }
 </script>
 

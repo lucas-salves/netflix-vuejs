@@ -1,12 +1,14 @@
 <template>
   <div class="contain">
-    
+    <categoria titulo="Comédia"></categoria>
+    <categoria titulo="Suspense"></categoria>
+
   </div>
 </template>
 
 <script>
 
-import categoria from "./components/Categoria.vue";
+import Categoria from "./components/Categoria.vue";
 export default {
   name: 'App',
   components:{
@@ -16,22 +18,8 @@ export default {
     return{
       intervalo:null
     }
-  },
-  methods:{
-    scrollToRight(){
-      this.intervalo = setInterval(() => {
-        document.getElementById('scroller').scrollLeft += 1
-      }, 5);
-    },
-    scrollToLeft(){
-      this.intervalo = setInterval(() => {
-        document.getElementById('scroller').scrollLeft -= 1
-      }, 5);
-    },
-    clearScroll(){
-      clearInterval(this.intervalo);
-    }
   }
+
 }
 </script>
 
