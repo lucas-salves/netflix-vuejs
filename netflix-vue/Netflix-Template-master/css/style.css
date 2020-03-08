@@ -1,42 +1,4 @@
-<template>
-  <div class="contain">
-    
-  </div>
-</template>
-
-<script>
-
-import categoria from "./components/Categoria.vue";
-export default {
-  name: 'App',
-  components:{
-    Categoria
-  },
-  data (){
-    return{
-      intervalo:null
-    }
-  },
-  methods:{
-    scrollToRight(){
-      this.intervalo = setInterval(() => {
-        document.getElementById('scroller').scrollLeft += 1
-      }, 5);
-    },
-    scrollToLeft(){
-      this.intervalo = setInterval(() => {
-        document.getElementById('scroller').scrollLeft -= 1
-      }, 5);
-    },
-    clearScroll(){
-      clearInterval(this.intervalo);
-    }
-  }
-}
-</script>
-
-<style>
-  @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 
 
 body,
@@ -246,5 +208,3 @@ a:hover {
   -webkit-transform: translate3d(125px, 0, 0);
           transform: translate3d(125px, 0, 0);
 }
-
-</style>
