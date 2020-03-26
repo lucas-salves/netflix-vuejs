@@ -1,5 +1,5 @@
 <template>
-    <div class="gui-card">
+    <div class="gui-card" v-bind:style="efeitoClick" @click="clickEfeito" @mouseout="removeClickEfeito">
             <div class="gui-card__media">
               <img class="gui-card__img" v-bind:src="imagem" alt=""  />
             </div>
@@ -13,7 +13,21 @@
 
 <script>
 export default {
-    props: ['titulo','imagem']
+    props: ['titulo','imagem'],
+    data(){
+        return{
+            efeitoClick:null
+        }
+    },
+    
+    methods: {
+        clickEfeito(){
+            this.efeitoClick = "transform: scale(1.9); marign-right: 110px;";
+        },
+        removeClickEfeito(){
+            this.efeitoClick = null;
+        }
+    }
 }
 </script>
 
