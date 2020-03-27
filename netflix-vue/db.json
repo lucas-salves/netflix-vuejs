@@ -1,0 +1,57 @@
+{
+    "categorias": [
+        {
+            "id":1,          
+            "titulo":"Terror",
+            "filmes":[
+              {
+                "id":1,
+                "titulo":"O chamado",
+                "imagem":"https://upload.wikimedia.org/wikipedia/pt/1/1c/The_Ring_%282002%29.jpg"
+              }, 
+              {
+                "id":2,
+                "titulo":"Premonição",
+                "imagem":"https://br.web.img3.acsta.net/medias/nmedia/18/93/48/60/20259212.jpg"
+              }, 
+              {
+                "id":3,
+                "titulo":"A casa de cera",
+                "imagem":"https://ottvsimg.ottvs.com.br/cov/wr.000756/0000756_335.jpg"
+              }, 
+              {
+                "id":4,
+                "titulo":"O exorcista",
+                "imagem":"https://media.fstatic.com/ra7JYATf4MmMC0j_HUJRnsKT_3E=/fit-in/290x478/smart/media/movies/covers/2012/02/a86c328381d82de92e964dc186d34a5c.jpg"
+              } 
+            ]
+          },
+          {
+            "id":2,          
+            "titulo":"Comédia",
+            "filmes":[
+              {
+                "id":1,
+                "titulo":"As branquelas",
+                "imagem":"https://upload.wikimedia.org/wikipedia/pt/thumb/d/de/White_chicks.jpeg/200px-White_chicks.jpeg"
+              }, 
+              {
+                "id":2,
+                "titulo":"Legalmente loira",
+                "imagem":"https://upload.wikimedia.org/wikipedia/pt/d/dc/Legamente_Loira.jpg"
+              }, 
+              {
+                "id":3,
+                "titulo":"Todo mundo em pânico",
+                "imagem":"https://upload.wikimedia.org/wikipedia/pt/d/d8/ScaryMovie.jpg"
+              }, 
+              {
+                "id":4,
+                "titulo":"Click",
+                  "imagem":"https://upload.wikimedia.org/wikipedia/pt/b/bd/Click_film.jpg"
+              } 
+            ]
+          }
+    ]
+
+}
